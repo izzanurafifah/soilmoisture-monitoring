@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Beranda - Soil Moisture Sensor</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase.js"></script>
+
+  <!-- =======================================================
+  * Template Name: Valera - v2.0.0
+  * Template URL: https://bootstrapmade.com/valera-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Firebase Configuration ======= -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCWB3fYL8MDuzhri9flHDiY7I521t3BISA",
+      authDomain: "soil-moisture-sensor-17021.firebaseapp.com",
+      databaseURL: "https://soil-moisture-sensor-17021.firebaseio.com",
+      projectId: "soil-moisture-sensor-17021",
+      storageBucket: "soil-moisture-sensor-17021.appspot.com",
+      messagingSenderId: "208807812229",
+      appId: "1:208807812229:web:50548af57541e6c301ddec",
+      measurementId: "G-KL6SWW7NH3"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Soil Moisture Monitoring</h1>
+      <h2>Monitoring kelembapan tanah secara <i>real-time</i>.</h2>
+      <a href="#masuk" class="btn-get-started scrollto">Mulai</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Soil Moisture</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#hero">Home</a></li>
+          <li><a href="#masuk">Masuk</a></li>
+          <!-- <li><a href="#tentangkami">Tentang Kami</a></li> -->
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <div class="header-social-links">
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Masuk Section ======= -->
+    <section id="masuk" class="masuk">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Login Pengguna</h2>
+          <p>Masukkan kombinasi email dan password yang telah terdaftar untuk masuk.</p>
+          <p>Jika belum memiliki akun, silahkan melakukan registrasi akun.</p>
+        </div>
+
+        <form class="form-signin">
+          <label for="inputEmail">Email address<span class="text-danger ml-1">*</span></label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="mail@mail.com" required>
+          <label for="inputPassword">Password<span class="text-danger ml-1">*</span></label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="**********" required>
+          <button id="signin" class="btn btn-primary">Masuk</button>
+          <button id="signup" class="btn btn-primary">Daftar</button>
+        </form>
+        
+      </div>
+    </section><!-- End Masuk Section -->
+
+    <!-- ======= Tentang Kami Section ======= -->
+    <!-- <section id="tentangkami" class="tentangkami">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Tentang Kami</h2>
+          <p><strong>Soil Moisture Monitoring</strong> adalah <i>website</i> yang membantu untuk melakukan monitoring dan mengetahui kondisi kelembapan tanah pada tanaman secara <i>real-time</i>.</p>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>izzanurafifah@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Phone:</h4>
+                <p>+62 8533 0085 590</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Tentang Kami Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Valera</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/valera-free-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Login Pengguna -->
+  <script src="assets/js/login.js"></script>
+
+</body>
+
+</html>
